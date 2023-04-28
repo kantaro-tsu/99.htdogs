@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2d2d2d;
+    font-family: 'Raleway', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+table{
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+td,th{
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    padding: 10px 20px;
+}
+
+td:first-child,th:first-child{
+    border-left:none;
+}
+
+tr:first-child td,tr:first-child th{
+    border-top:none;
+}
+
+header {
+    padding-top: 50px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+header h1 {
+    font-family: none;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+}
+
+#navi ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+#navi li {
+    flex: auto;
+    padding-right: 15px;
+}
+
+#container {
+    margin: 0 auto;
+}
+
+.item-area {
+    display: flex;
+    gap: 50px;
+    padding: 50px 90px;
+}
+
+#image {
+    flex-grow: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text {
+    flex-grow: 1;
+    width: 90%;
+    text-align: left;
+}
+
+.text h2 {
+    font-family: none;
+    padding: 20px 0px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 0.9rem;
+}
+
+.text p {
+    margin: 20px 0px;
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+
+.text button {
+    width: 90%;
+    padding: 15px 0px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #2d2d2d;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.text select {
+    width: 200px;    
+    -moz-appearance: menulist-button;
+    -webkit-appearance: menulist-button;
+    appearance: menulist-button;
+    border: 1px solid #d3d3d3;
+}
+
+.text option {
+    text-align: left;
+}
+
+.size-table table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.size-table tr {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    }
+
+.size-table tr:first-child {
+    background-color: #f5f5f5;
+    border-top: 1px solid #d3d3d3;
+}
+
+.size-table tr:last-child {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.size-num {
+    background-color: #f5f5f5;
+}
+
+footer p {
+    margin: 50px 0 10px 0;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 896px) {
+    body {
+        padding: 0px 10px;
+    }
+    .item-area {
+        display: block;
+    }
+
+    #image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navi {
+        padding: 20px 10px;
+        overflow: scroll hidden;
+    }
+
+}

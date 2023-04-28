@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+/* 元サイズからブラウザ幅いっぱいに指定 */
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+}
+
+/* object-fitで縦横比を保持して画像を指定のサイズにトリミング */
+#mainvisual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 80px;
+}
+
+#inform {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#inform h1 {
+    margin-bottom: 20px;
+}
+
+.photo {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+/* calcでwidthの値を３等分する */
+.photo li {
+    width: calc(100%/3);
+}
+
+.photo img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* text-decorationでaタグのアンダーバーを消去 */
+.button {
+    display: inline-block;
+    padding: 18px 60px;
+    border: solid 1px #2b2a27;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 20px;
+}
+
+#footer .link {
+    margin-bottom: 20px;
+}
+
+#footer .link a {
+    margin: 0 9px
+
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 834px) {
+    .photo {
+        display: block;
+    }
+
+    .photo li {
+        width: 100%;
+    }
+}

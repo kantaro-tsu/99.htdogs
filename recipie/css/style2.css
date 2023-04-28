@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+/* 元サイズからブラウザ幅いっぱいに指定 */
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+}
+
+#upper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+#recipe {
+    width: 50%;
+    padding: 40px 5% 0 5%;;
+    margin-bottom: 40px;
+}
+
+#recipe h2 {
+    font-size: 1.2rem;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0;
+}
+
+.recipe-title {
+    margin-bottom: 40px;
+}
+
+#recipe h1 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.material {
+    margin-bottom: 40px;
+}
+
+.material-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.material-list dt {
+    width: 85%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+}
+
+.material-list dd {
+    width: 15%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    text-align: right;
+}
+
+.cook-list li {
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    margin-left: 20px;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* text-decorationでaタグのアンダーバーを消去 */
+.button {
+    display: inline-block;
+    padding: 18px 60px;
+    border: solid 1px #2b2a27;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 20px;
+}
+
+#footer .link {
+    margin-bottom: 20px;
+}
+
+#footer .link a {
+    margin: 0 9px
+
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 834px) {
+    #upper {
+        display: block;
+    }
+    #recipe {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+    .image img {
+        height: auto;
+    }
+}
